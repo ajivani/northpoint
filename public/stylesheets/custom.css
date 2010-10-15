@@ -20,7 +20,7 @@ section{
   background: #fff;
 }
 section h1{
-  font-size: 200%;
+  font-size: 250%;
 }
 /*links */
 a{
@@ -37,12 +37,14 @@ a:visited {
 /*NAVIGATION */
 
 nav {
-  float: right;
+  /*float: right;*/
 }
 nav {
   background-color: white;
-  padding: 0 0.7em;
+  padding: 0.2em 0.7em;
   white-space: nowrap;
+  font-size: 170%;
+  text-align: center;
 }
 nav ul{
   margin: 0;

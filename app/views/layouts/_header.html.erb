@@ -1,6 +1,15 @@
 <header>
-
-<%= image_tag "rails.png",  :alt=>"logo" %>
-
+<%= link_to logo, root_path %>
+<!--%= image_tag "rails.png",  :alt=>"logo" %-->
+<nav class="round">
+  <ul>
+      <! about_path created when you do match '/about' in the routes.rb file> 
+      <li><%= link_to "Home", root_path %></li> |
+        <li> <%=link_to "About", about_path %></li> |<!rails figures out the path when we give it a restful user >
+        <li> Products </li> |
+        <li> <%=link_to "Request a Quote", request_quote_path%></li> |
+        <li> <%= link_to "Contact Us", contact_path %></li> 
+    </ul>
+  </nav>
 
 </header>
