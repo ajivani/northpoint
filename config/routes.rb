@@ -1,4 +1,22 @@
 Northpoint::Application.routes.draw do
+
+  root :to=> "pages#home"
+  match '/home', :to=>"pages#home"
+  match '/about', :to=>"pages#about"
+  match '/contact', :to=>"pages#contact"
+  match '/request_quote', :to=>"pages#request_quote"
+
+  
+
+
+  get "pages/home"
+
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/request_quote"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
