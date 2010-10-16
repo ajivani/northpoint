@@ -9,7 +9,7 @@ module ApplicationHelper
   end
 
   def logo
-    logo = image_tag("rails.png", :alt=>"NorthPoint Canadian", :class=>"round")
+    logo = image_tag("logo.png", :alt=>"NorthPoint Canadian", :class=>"round")
   end
 
 end

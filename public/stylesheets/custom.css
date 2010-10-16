@@ -12,7 +12,18 @@ header {
 header img {
 padding: 1em;
 background: #ffffff;
+
 }
+header .logo_image{
+  text-align: left;
+  font-size: 100%;
+  background: #ffffff;
+  overflow: hidden;
+}
+header .words{
+  text-align: center;
+}
+
 section{
   margin-top: 1em;
   font-size: 120%;
@@ -99,6 +110,10 @@ footer {
 }
 footer nav{
   float: none;
+  font-size: 150%;
+}
+footer nav ul.footer_caption{
+  font-size: 65%;
 }
 
 /*User show page*/
@@ -232,4 +247,10 @@ form.new_micropost textarea {
   height: 4em;
   margin-bottom: 0;
 }
-
+div.home_content{
+  float: none;
+}
+div.home_conent div.home_paragraph{
+  float: right;
+  font-size: 220%;
+}
