@@ -1,0 +1,18 @@
+<table class="profile" summary="Profile Information">
+  <tr>
+    <td class="main">
+      <h1>
+        <%= @product.name %>
+      </h1>
+
+        <%= image_tag(@product.image_url, :height=>300, :width=>250)%>
+      
+    </td>
+    <td class="sidebar round">
+        <strong>Description: </strong><%= @product.description%><br />
+        <strong>SKU: </strong> <%=@product.sku%><br />
+    </td>
+  </tr>
+</table>
+  
+

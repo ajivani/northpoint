@@ -6,7 +6,7 @@ Northpoint::Application.routes.draw do
   match '/contact', :to=>"pages#contact"
   match '/request_quote', :to=>"pages#request_quote"
 
-  
+  resources :products #make it so that we can access all the product information  
 
 
   get "pages/home"

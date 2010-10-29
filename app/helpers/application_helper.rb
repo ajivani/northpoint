@@ -1,6 +1,6 @@
 module ApplicationHelper
   def title
-    base_title = "NorthPoint Canadian"
+    base_title = "NorthPoint Canadian Company"
     if @title.nil?
       base_title
     else

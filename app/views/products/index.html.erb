@@ -1,0 +1,9 @@
+<h1>All Products</h1>
+<%#= image_tag("http://img361.imageshack.us/img361/1470/bag9tt3.jpg", :width=>150, :height => 200) %>
+
+<%= will_paginate %>
+  <table class="products" summary="Products.">
+      <%= render @products %>
+  </table>
+<%= will_paginate %>
+

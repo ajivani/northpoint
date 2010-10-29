@@ -123,12 +123,12 @@ table.profile {
 }
 
 td.main{
-  width: 70%;
+  width: 30%;
   padding: 1em;
 }
 
 td.sidebar {
-  width: 30%;
+  width: 100%;
   padding: 1em;
   vertical-align:top;
   background: #ffc;
@@ -138,6 +138,17 @@ td.sidebar {
   border: 1px solid #999;
   margin-bottom: -15px;
 }
+
+/*THE PRODUCTS HOME PAGE */
+/*for the products thing */
+.products tr td.title{
+  width: 100%;
+  background-color: #ffffff;
+  text-align: left;
+
+}
+
+
 
 /* form stuff */
 div.field, div.actions {
@@ -189,7 +200,7 @@ margin-top: 1em;
 .users li {
 list-style: none;
 }
-
+/* for the products */
 
 
 /*for the microposts */
@@ -206,7 +217,7 @@ table.microposts tr {
 }
 
 table.microposts tr td.gravatar {
-  border-top: 1px solid #ccc;
+  border-top: 10px solid #ccc;
   vertical-align: top;
   width: 50px;
 }
