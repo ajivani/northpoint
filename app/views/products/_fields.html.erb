@@ -1,18 +1,19 @@
-
-<%= render 'shared/error_messages', :object=>f.object %>
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_field :description %>
-  </div>
-  <div class="field">
-    <%= f.label :image_url, "Direct Image Url" %><br />
-    <%= f.password_field :image_url %>
-  </div>
-  <div class="field">
-    <%= f.label :sku, "SKU" %><br />
-    <%= f.password_field :sku %>
-  </div>
+  <%= render 'shared/error_messages', :object=>f.object %>
+    <div class="field">
+      <%= f.label :name %><br />
+      <%= f.text_field :name %>
+    </div>
+    <div class="field">
+      <%= f.label :description %><br />
+      <%= f.text_area :description %>
+    </div>
+    <div class="field">
+      <%= f.label :image_url, "Direct Image Url" %><br />
+        <%= f.text_field :image_url %>
+    </div>
+    <div class="field">
+      <%= f.label :sku, "SKU" %><br />
+      <%= f.text_field :sku %>
+    </div>
+      <%= f.submit "Create Product" %>
+    </div>

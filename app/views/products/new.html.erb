@@ -2,24 +2,5 @@
 
 <%= form_for(@product) do |f| %>
   <div class="actions">
-    <%#= render 'fields', :f=>f%>    
-  <%= render 'shared/error_messages', :object=>f.object %>
-    <div class="field">
-      <%= f.label :name %><br />
-      <%= f.text_field :name %>
-    </div>
-    <div class="field">
-      <%= f.label :description %><br />
-      <%= f.text_field :description %>
-    </div>
-    <div class="field">
-      <%= f.label :image_url, "Direct Image Url" %><br />
-        <%= f.text_field :image_url %>
-    </div>
-    <div class="field">
-      <%= f.label :sku, "SKU" %><br />
-      <%= f.text_field :sku %>
-    </div>
-      <%= f.submit "Create Product" %>
-    </div>
+    <%= render 'fields', :f=>f %>
 <% end %>
