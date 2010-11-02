@@ -5,15 +5,27 @@ class ProductsController < ApplicationController
     @title = "Product Listings"
     @products = Product.paginate(:page=>params[:page])
   end
+
   def show
     @product = Product.find(params[:id])
   end
 
+  def destroy
+    product = Product.find(params[:id])
+    if product.destroy
+      flash[:success] = "Product destroyed"
+      redirect_to products_path
+    else
+      flash[:error]="Cannot delete product, error occured"
+      redirect_to products_path
+    end
+  end
+
+#products/new
   def new
     @title = "Create a new Product" 
     @product = Product.new
   end
-  
   def create
     @title = "Save a new Product"
     @product = Product.new(params[:product])
@@ -21,16 +33,25 @@ class ProductsController < ApplicationController
       flash[:success] = 'Product successfully saved'
       redirect_to @product #user_path(@user)
     else
-      flash[:error] = 'ERROR! PRODUCT NOT SAVED'
       @title = "Create new product"
-      @user.password = ''
-      @user.password_confirmation = ''
       render 'new' #render works for actions #as well as partials 
     end
   end
 
+#products/1/edit
+  def edit
+    @title = "Edit a products details"
+    @product = Product.find(params[:id])
+  end
+  def update
+    @product = Product.find(params[:id])
+    if @product.update_attributes(params[:product])
+      flash[:success] = 'Product successfully updated'
+      redirect_to product_path(@product)
+    else
+      @title = "Edit Product"
+      render 'edit'
+    end
+  end
+
 end
-
-
-
-

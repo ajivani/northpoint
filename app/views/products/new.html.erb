@@ -3,4 +3,6 @@
 <%= form_for(@product) do |f| %>
   <div class="actions">
     <%= render 'fields', :f=>f %>
+    <%= f.submit "Create Product" %>
+  </div>
 <% end %>
