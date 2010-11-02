@@ -9,9 +9,9 @@
       
     </td>
     <td class="sidebar round">
-      <strong>Product Code: </strong> <%=@product.sku%><br />
+      <strong>Product Code: </strong> <%=@product.sku%><br /><br />
       <% if !@product.description.nil? %>
-        <strong>Description: </strong><%=sanitize @product.description%><br />
+        <%=sanitize @product.description%><br />
       <%end%>
       
     </td>
