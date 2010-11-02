@@ -10,6 +10,7 @@ class PagesController < ApplicationController
     @title = "Contact"
   end
 
+  #need things for the 
   def request_quote
     @title = "Request a Quote"
   end
