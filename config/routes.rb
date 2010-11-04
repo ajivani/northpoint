@@ -1,10 +1,13 @@
 Northpoint::Application.routes.draw do
 
+
+  resources :requests
+
   root :to=> "pages#home"
   match '/home', :to=>"pages#home"
   match '/about', :to=>"pages#about"
   match '/contact', :to=>"pages#contact"
-  match '/request_quote', :to=>"pages#request_quote"
+  match '/request_quote', :to=>"requests#new"
 
   resources :products #make it so that we can access all the product information  
 

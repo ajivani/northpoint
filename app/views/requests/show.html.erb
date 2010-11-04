@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Current customer:</b>
+  <%= @request.current_customer %>
+</p>
+
+<p>
+  <b>Company name:</b>
+  <%= @request.company_name %>
+</p>
+
+<p>
+  <b>Customer name:</b>
+  <%= @request.customer_name %>
+</p>
+
+<p>
+  <b>Job title:</b>
+  <%= @request.job_title %>
+</p>
+
+<p>
+  <b>Phone number:</b>
+  <%= @request.phone_number %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @request.email %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @request.city %>
+</p>
+
+<p>
+  <b>Province or state:</b>
+  <%= @request.province_or_state %>
+</p>
+
+<p>
+  <b>Quote details:</b>
+  <%= @request.quote_details %>
+</p>
+
+<p>
+  <b>Estimated quantity per order:</b>
+  <%= @request.estimated_quantity_per_order %>
+</p>
+
+<p>
+  <b>Estimated quantity per annum:</b>
+  <%= @request.estimated_quantity_per_annum %>
+</p>
+
+
+<%= link_to 'Edit', edit_request_path(@request) %> |
+<%= link_to 'Back', requests_path %>

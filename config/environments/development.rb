@@ -22,5 +22,20 @@ Northpoint::Application.configure do
 
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
+
+  #stuff to make it work with google
+  config.action_mailer.perform_deliveries = true 
+  config.action_mailer.raise_delivery_errors = true
+  
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    :address              => "smtp.gmail.com",
+    :port                 => 587,
+    :domain               => 'northpointcanadian.com',
+    :user_name            => 'ajivani.test',
+    :password             => 'fhcheetos',
+    :authentication       => 'plain',
+    :enable_starttls_auto => true  }
+  
 end
 

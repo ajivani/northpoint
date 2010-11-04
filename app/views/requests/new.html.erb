@@ -1,0 +1,13 @@
+<h1>Request a Quote</h1>
+<h4>This is just a way for us to get an idea of what you are looking for. It in no way obligates you to anything.</h4>
+
+<%#= render 'form' %>
+
+<%= form_for(@request) do |f| %>
+  <div class="actions">
+    <%= render 'request_fields', :f=>f %>
+    <%= f.submit "Ask for a Quote" %>
+  </div>
+<% end %>
+
+<%= link_to 'Back', requests_path %>
