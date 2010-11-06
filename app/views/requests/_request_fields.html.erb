@@ -33,7 +33,8 @@
   </div>
   <div class="field">
     <%= f.label :quote_details, "*Items required:" %>
-    <%= f.text_area :quote_details%>
+    <%#= readable_text_area(f,:quote_details, cols=>10, :rows=>20) %>
+    <%= f.text_area :quote_details, :rows=>5, :cols=>40%>
   </div>
   <div class="field">
     <%= f.label :estimated_quantity_per_order %><br />
