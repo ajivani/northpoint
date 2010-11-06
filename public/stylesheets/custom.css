@@ -147,6 +147,33 @@ td.sidebar {
   text-align: left;
 
 }
+.field label {
+width: 10em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+.field select, .field textarea, .field input, .field radio_button {
+margin-left: 0.5em;
+}
+.field1 label{
+width: 22em;
+float: left;
+text-align: right;
+padding-top: 0.2em;
+margin-right: 0.1em;
+display: block;
+}
+.field_radio label{
+  float: left;
+  text-align: right;
+}
+.field_radio2 label{
+  float: left;
+  text-align: right;
+}
 
 
 

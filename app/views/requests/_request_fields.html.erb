@@ -1,45 +1,42 @@
 <%= render 'shared/error_messages', :object=>f.object %>
+  <div class="field1">
+    <%= f.label :current_customer, "Are you currently a customer of Northpoint?" %>
+  </div><p>
+    <%= f.radio_button :current_customer, 'yes' %>
+    <%= f.label :yes%>
+    <%= f.radio_button :current_customer, 'no' %>
+    <%= f.label :no %>
+    </p>
   <div class="field">
-    <%= f.label :current_customer, "Are you currently a customer of Northpoint?" %><br />
-    <%= f.text_field :current_customer %>
-  </div>
-  <div class="field">
-    <%= f.label :company_name %><br />
+    <%= f.label :company_name, "*Company name" %>
     <%= f.text_field :company_name %>
   </div>
   <div class="field">
-    <%= f.label :customer_name, "Your name" %><br />
+    <%= f.label :customer_name, "*Your name" %>
     <%= f.text_field :customer_name %>
   </div>
   <div class="field">
-    <%= f.label :job_title %><br />
-    <%= f.text_field :job_title %>
-  </div>
-  <div class="field">
-    <%= f.label :phone_number %><br />
+    <%= f.label :phone_number, "*Phone number" %>
     <%= f.text_field :phone_number %>
   </div>
   <div class="field">
-    <%= f.label :email, "*Email (Don't worry, we hate spam too. This is just a way for us to contact you)" %><br />
+    <%= f.label :email, "*Email" %>
     <%= f.text_field :email %>
   </div>
   <div class="field">
-    <%= f.label :city %><br />
+    <%= f.label :city %>
     <%= f.text_field :city %>
   </div>
   <div class="field">
-    <%= f.label :province_or_state %><br />
+    <%= f.label :province_or_state, "Province or State:" %>
     <%= f.text_field :province_or_state %>
   </div>
   <div class="field">
-    <%= f.label :quote_details %><br />
-    <%= f.text_area :quote_details %>
+    <%= f.label :quote_details, "*Items required:" %>
+    <%= f.text_area :quote_details%>
   </div>
   <div class="field">
     <%= f.label :estimated_quantity_per_order %><br />
     <%= f.text_field :estimated_quantity_per_order, :size=>"50", :rows => 3, :cols => 60 %>
   </div>
-  <div class="field">
-    <%= f.label :estimated_quantity_per_annum %><br />
-    <%= f.text_field :estimated_quantity_per_annum, :size=>'50', :rows => 3, :cols=> 20 %>
-  </div>
+

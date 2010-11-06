@@ -4,7 +4,7 @@ class RequestMailer < ActionMailer::Base
   def request_information(request)
     @request = request
     @url = "http://northpointcanadian.heroku.com/requests"
-    people = ["ajivani@gmail.com","ajivani.test@gmail.com","faisal@northpointcanadian.com","info@northpointcanadian.com"]
+    people = ["ajivani.test@gmail.com","faisal@northpointcanadian.com","info@northpointcanadian.com"]
     #people = ["ajivani@gmail.com","ajivani.test@gmail.com"]
     persons = ""
     people.map{|name|
