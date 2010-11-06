@@ -35,14 +35,17 @@ section h1{
 }
 /*links */
 a{
-  color: #09c;
+  /*color: #09c;*/
+  color: #d00c0c;
   text-decoration: none;
 }
 a:hover {
-  color: #069;
+  /*color: #069;*/
+  color : #d00c0c;
   text-decoration: underline;
 }
 a:visited {
+
   color: #069;
 }
 /*NAVIGATION */
@@ -69,10 +72,13 @@ nav ul li{
 nav ul li a{
   padding: 0 5px;
   font-weight: bold;
+  color: #d00c0c;
 }
 
 nav ul li a:visited {
-  color: #09c;
+  /*color: #09c;*/
+  color: #d00c0c;
+  /*color: green;*/
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -176,10 +182,10 @@ display: block;
 }
 
 
-
 /* form stuff */
-div.field, div.actions {
+div.field, div.actions, div.field_radio, div.field_radio2, div.field1 {
   margin-bottom: 10px;
+  font-size: 95%;
 }
 
 /*error handling */
