@@ -36,17 +36,19 @@ section h1{
 /*links */
 a{
   /*color: #09c;*/
-  color: #d00c0c;
+  color: #0060aa;
+  /*color: #d00c0c;*/
   text-decoration: none;
 }
 a:hover {
   /*color: #069;*/
-  color : #d00c0c;
+  color: #0060aa;
+  /*color : #d00c0c; */
   text-decoration: underline;
 }
 a:visited {
-
-  color: #069;
+  color: #0060aa;
+  /*color: #069;*/
 }
 /*NAVIGATION */
 
@@ -72,13 +74,14 @@ nav ul li{
 nav ul li a{
   padding: 0 5px;
   font-weight: bold;
-  color: #d00c0c;
+  /*color: #d00c0c;*/
+  color: #0060aa;
 }
 
 nav ul li a:visited {
   /*color: #09c;*/
-  color: #d00c0c;
-  /*color: green;*/
+  /*color: #d00c0c;*/
+  color: #0060aa;
 }
 nav ul li a:hover {
   text-decoration: underline;
@@ -120,6 +123,23 @@ footer nav{
 }
 footer nav ul.footer_caption{
   font-size: 65%;
+}
+/*Home page */
+table.home{
+  width: 100%;
+  margin-bottom: 0;
+}
+td.home_image {
+  width:  40%;
+  padding: 1em;
+  /*background: #111;*/
+}
+td.home_text {
+  width: 60%;
+  padding: 1em;
+  vertical-align:top;
+  /*background: #ccc;*/
+
 }
 
 /*User show page*/
