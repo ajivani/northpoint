@@ -36,19 +36,19 @@ section h1{
 /*links */
 a{
   /*color: #09c;*/
-  color: #0060aa;
-  /*color: #d00c0c;*/
+  /*color: #0060aa;*/
+  color: #d00c0c;
   text-decoration: none;
 }
 a:hover {
-  /*color: #069;*/
-  color: #0060aa;
-  /*color : #d00c0c; */
+  /*color: #069;
+  color: #0060aa;*/
+  color: #d00c0c;
   text-decoration: underline;
 }
 a:visited {
-  color: #0060aa;
-  /*color: #069;*/
+  /*color: #0060aa;*/
+  color: #d00c0c;
 }
 /*NAVIGATION */
 
@@ -74,14 +74,16 @@ nav ul li{
 nav ul li a{
   padding: 0 5px;
   font-weight: bold;
+  color: #1e7219;
   /*color: #d00c0c;*/
-  color: #0060aa;
+  /*color: #0060aa;*/
 }
 
 nav ul li a:visited {
   /*color: #09c;*/
   /*color: #d00c0c;*/
-  color: #0060aa;
+  color: #1e7219;
+  /*color: #0060aa;*/
 }
 nav ul li a:hover {
   text-decoration: underline;
