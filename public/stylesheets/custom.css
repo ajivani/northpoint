@@ -37,18 +37,21 @@ section h1{
 a{
   /*color: #09c;*/
   /*color: #0060aa;*/
-  color: #d00c0c;
+  /*color: #d00c0c;*/
+   color: #1e7219;
   text-decoration: none;
 }
 a:hover {
   /*color: #069;
   color: #0060aa;*/
-  color: #d00c0c;
+  /*color: #d00c0c;*/
+  color: #1e7219;
   text-decoration: underline;
 }
 a:visited {
   /*color: #0060aa;*/
-  color: #d00c0c;
+  /*color: #d00c0c; red*/
+   color: #1e7219;
 }
 /*NAVIGATION */
 
