@@ -1,6 +1,6 @@
 <tr>
   <td> 
-    <%= link_to (image_tag(product.image_url, :width=>85, :height=>100)), product_path(product) %>
+    <%= link_to (image_tag(product.image_url, :width=>85)), product_path(product) %>
     <td class="title">
       <%= link_to product.name, product_path(product) %> - <%= truncate(strip_tags(product.description), :length=>80) %>
     </td>    
