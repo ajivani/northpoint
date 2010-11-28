@@ -8,8 +8,8 @@ module ApplicationHelper
     end
   end
 
-  def logo
-    logo = image_tag("northpoint_logo.jpg", :alt=>"NorthPoint Canadian", :class=>"round")
+  def logo(options={})
+    logo = image_tag("northpoint_logo.jpg", :alt=>"NorthPoint Canadian", :class=>"round", :size => options[:size])
   end
 
 end
