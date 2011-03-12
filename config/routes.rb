@@ -1,6 +1,8 @@
 Northpoint::Application.routes.draw do
 
 
+  resources :relationships
+
   resources :requests
 
   root :to=> "pages#home"
