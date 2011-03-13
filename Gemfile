@@ -56,4 +56,3 @@ end
 # group :development, :test do
 #   gem 'webrat'
 # end
-
